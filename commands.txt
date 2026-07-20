@@ -1,0 +1,30 @@
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install "pipecat-ai[webrtc,silero,google]" pipecat-ai-small-webrtc-prebuilt
+cd q2_knowledge_base
+python ingest.py
+uvicorn retrieval_server:app --reload --port 8001
+# new terminal
+curl -X POST http://localhost:8001/retrieve/test | python -m json.tool
+curl -X POST http://localhost:8001/retrieve/pii-demo | python -m json.tool
+# new terminal
+cd q1_voice_agent
+uvicorn voice_agent:app --reload --port 7860
+open browser=> http://localhost:7860
+# phillipine bot
+cd q3_multilingual_bots
+uvicorn multilingual_agent:ph_app --reload --port 7861
+open browser=> http://localhost:7861
+# indosenian bot
+cd q3_multilingual_bots
+uvicorn multilingual_agent:id_app --reload --port 7862
+open browser=>  http://localhost:7862
+# Run live insights
+uvicorn q4_live_insights.pipeline:app --reload --port 8003
+open browser=> http://localhost:8003
+# Simulate a call( not necessary)
+cd q4_live_insights
+python simulate_call.py
+python simulate_call.py ../recordings/call1.wav
+curl http://localhost:8003/report | python -m json.tool

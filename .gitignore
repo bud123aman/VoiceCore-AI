@@ -1,0 +1,49 @@
+# ── Environment ───────────────────────────────────────────────
+.env
+*.env.local
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# ── Project-specific ──────────────────────────────────────────
+q2_knowledge_base/bm25_index.pkl   # rebuilt by ingest.py
+recordings/*.mp3
+recordings/*.wav
+recordings/*.mp4
+recordings/*.mov
+recordings/*.png
+recordings/*.jpg
+recordings/*.pdf
+recordings/*.json
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Node (any JS tooling) ─────────────────────────────────────
+node_modules/
+npm-debug.log*

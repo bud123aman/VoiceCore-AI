@@ -1,0 +1,23 @@
+# Q1 Call Transcript — [SCENARIO NAME]
+# Date: [DATE]
+# Duration: [DURATION]
+# Agent: Priya (HealthShield Voice Agent)
+# KB records retrieved: [LIST RECORD IDs FROM SERVER LOGS]
+
+---
+
+Agent: Hello! Thank you for calling HealthShield Insurance. My name is Priya. How can I help you today?
+
+Customer: [REPLACE WITH ACTUAL TRANSCRIPT]
+
+Agent: [REPLACE WITH ACTUAL TRANSCRIPT]
+
+...
+
+---
+
+# Qualification result: [HIGH_PRIORITY / MEDIUM_PRIORITY / LOW_PRIORITY / NOT_QUALIFIED]
+# Reason: [e.g. age 35, family of 4, no current coverage, interested in Premium plan]
+# KB grounding verified: [YES / NO — check server logs for tool call entries]
+# Fallback triggered: [YES / NO]
+# Escalation triggered: [YES / NO]
