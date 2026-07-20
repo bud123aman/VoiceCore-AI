@@ -299,32 +299,6 @@ WAV file → 1-second chunks (real-time pacing)
 
 ---
 
-## Submission Checklist
-
-### Code (complete)
-- [x] Q2 KB — hybrid retrieval, PII protection, 5-query test, PII demo endpoint
-- [x] Q1 — voice agent with correct realtime pipeline, KB tool wiring, greeting on connect
-- [x] Q3 — PH and ID bots with correct realtime pipeline and localization evidence
-- [x] Q4 — real-time pipeline with correct per-chunk ASR latency measurement
-- [x] `.env.example` — no secrets committed
-
-### Evidence (you must generate by running the agents)
-- [ ] `recordings/q1_call_cooperative.mp3` + transcript
-- [ ] `recordings/q1_call_objection.mp3` + transcript
-- [ ] `recordings/q1_call_incomplete.mp3` + transcript
-- [ ] `recordings/q1_call_outofscope.mp3` + transcript
-- [ ] `recordings/q1_call_escalation.mp3` + transcript
-- [ ] `recordings/q3_ph_call_cooperative.mp3` + transcript
-- [ ] `recordings/q3_ph_call_objection.mp3` + transcript
-- [ ] `recordings/q3_id_call_cooperative.mp3` + transcript
-- [ ] `recordings/q3_id_call_regional.mp3` + transcript
-- [ ] `recordings/q4_latency_report.json` — from `curl http://localhost:8003/report`
-- [ ] `recordings/q4_dashboard_screenshot.png` — browser showing live nudges
-- [ ] `recordings/architecture.png` — system diagram
-- [ ] Video walkthrough (10–15 min, upload to YouTube/Loom, add link here)
-
----
-
 ## Known Limitations and Production Improvements
 
 1. **Synthetic KB data.** Production: parse real policy PDFs with Docling or AWS Textract, 500+ records.
