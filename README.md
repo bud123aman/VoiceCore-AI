@@ -5,7 +5,7 @@ Four working AI systems. Zero cost. No credit card required.
 ## Video Walkthrough
 
 <a href="https://drive.google.com/file/d/10V0x--jG_g5PZott8IJib7mYhLfuFrIa/view?usp=sharing">
-  <img width="882" alt="Project Walkthrough Video" src="https://github.com/user-attachments/assets/48f2a99a-2e53-42a3-a8fb-2eb3f310323d">
+  <img width="882" alt="Project Walkthrough Video" src="https://github.com/user-attachments/assets/570bfab2-4117-427b-94b0-e1f3eefc1e2c">
 </a>
 
 ---
